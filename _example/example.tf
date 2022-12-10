@@ -5,9 +5,9 @@ provider "azurerm" {
 module "resource_group" {
   source = "../"
 
+  name     = "app"
   environment = "test"
   label_order = ["name", "environment", ]
 
-  name     = "example"
   location = "North Europe"
 }
